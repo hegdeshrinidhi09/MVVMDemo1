@@ -20,7 +20,7 @@
                                 <rect key="frame" x="20" y="69" width="374" height="758"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="158" id="0vO-x6-J7o">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="158" id="0vO-x6-J7o" customClass="EmployeeTableViewCell" customModule="MVVMDemo" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="374" height="158"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0vO-x6-J7o" id="J5r-Ce-Jyr">
@@ -49,6 +49,10 @@
                                                 <constraint firstAttribute="trailingMargin" secondItem="ZWY-MW-WjA" secondAttribute="trailing" constant="30" id="sZO-YL-K0K"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="employeeIdLabel" destination="ZWY-MW-WjA" id="9hb-xY-xGO"/>
+                                            <outlet property="employeeNameLabel" destination="xg2-Bs-Hqu" id="XsD-JS-NOe"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -63,7 +67,6 @@
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="EmployeeTableViewCell" destination="J5r-Ce-Jyr" id="HUl-HU-ZIb"/>
                         <outlet property="UITableView" destination="rK2-1b-Jsd" id="Jjd-Ie-Lxp"/>
                     </connections>
                 </viewController>
